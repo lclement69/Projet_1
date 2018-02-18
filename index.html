@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="slider.css" />
+		<link rel="stylesheet" type="text/css" href="responsive.css" />
 		<title>WebAgency</title>
 	</head>
 
@@ -10,7 +12,6 @@
 		<div id="bloc_page">
 
 	<!-- Logo et navigation -->
-	
 
 		<header>
 			<nav class="main-nav">
@@ -26,37 +27,27 @@
 			</nav>
 		</header>
 
-
 		<!-- slide -->
 
-
-		<section>
-
-			<div id="slideshow">
-				<div class="container_slide">
-					<div class="slider">
-						<figure><img src="images/slider/bg1.jpg"></figure>
-						<figure><img src="images/slider/bg2.jpg"></figure>
-						<h1><span style=color:""> WEBAGENCY : L'agence de tous <br>vos projets</span></h1>
-						<p>Vous avez un projet web ??? La webagency vous aide à le réaliser</p>
-					</div>
-				</div>
-			</div>
-			<hr/>
-
-		</section>
-
+        <div id="slideshow">
+            <div class="container_slide">
+                <div class="slider">
+                 
+                    
+                </div>
+            </div>
+        </div>
 		
 		<!--Nos services-->
 
-
 		<section class="nos_services">
 			<h2>Nos services</h2>
-				<hr/>
-				<div id="Point_bleu"></div>
-					<div class="texte_sous_h2"></div>
+				<div id="Point_bleu">
+					<div class="texte_sous_h2">
 			<p>Ultima Syriarum est Palaestina per intervalla magna protenta, cultis abundans terris et nitidis et civitates habens quasdam egregias, nullam nulli cedentem sed sibi vicissim velut ad perpendiculum aemulas: Caesaream, quam ad honorem Octaviani principis exaedificavit Herodes, et Eleutheropolim et Neapolim itidemque Ascalonem Gazam aevo superiore exstructas.</p>
-				<div id="Photo_ordinateur" <img src="images/main-feature.png" alt="ordinateur apple avec animation dessus"></div>
+				<div id="Photo_ordinateur">
+					<img src="images/main-feature.png" alt="ordinateur apple avec animation dessus">
+				</div>
 					<div class="Bloc_services">
 						<div class="description_services">
 							<div class="logo_bloc_services">
@@ -64,6 +55,7 @@
 						</div>
 					</div>
 				<div class="services_texte">
+
 			<h3>UX design</h3>
 				<p>Non nascetur certam cui Quo cui diem non ei ante Nam nascetur et non denique quod non Sortietur pervenire Proficiscetur.
 		</p>
@@ -74,6 +66,7 @@
 				<p>Non nascetur certam cui Quo cui diem non ei ante Nam nascetur et non denique quod non Sortietur pervenire Proficiscetur.
 		</p>
 				</div>
+
 				<div class="services_texte">
 			<h3>SEO</h3>
 				<p>Non nascetur certam cui Quo cui diem non ei ante Nam nascetur et non denique quod non Sortietur pervenire Proficiscetur.
@@ -85,28 +78,138 @@
 		</section>
 
 
-		<!-- Porfolio -->
+		<!-- Projet -->
 
 
 		<section class="Nos_projets">
-			<h2>Nos Projets</h2>
-				<hr/>
-				<div id="Point_bleu"></div>
-					<div class="texte_sous_h2"></div>
-				<p>Ultima Syriarum est Palaestina per intervalla magna protenta, cultis abundans terris et nitidis et civitates habens quasdam egregias, nullam nulli cedentem sed sibi vicissim velut ad perpendiculum aemulas: Caesaream, quam ad honorem Octaviani principis exaedificavit Herodes, et Eleutheropolim et Neapolim itidemque Ascalonem Gazam aevo superiore exstructas.</p>
-		</section>	
+			<div class="section_header2">
+				<h2>Nos Projets</h2>
 
-				<hr/>
+					<div id="Point_bleu">
+						<div class="texte_sous_h2">
+					<p>Ultima Syriarum est Palaestina per intervalla magna protenta, cultis abundans terris et nitidis et civitates habens quasdam egregias, nullam nulli cedentem sed sibi vicissim velut ad perpendiculum aemulas: Caesaream, quam ad honorem Octaviani principis exaedificavit Herodes, et Eleutheropolim et Neapolim itidemque Ascalonem Gazam aevo superiore exstructas.</p>
+						</div>
+					</div>
+			</div>
+
+		<!-- Menu Projet-->	
+
+			<nav>
+					<ul class="container_menu_projet">
+						<li><a href="#">All Works</a></li>
+						<li><a href="#">creative</a></li>
+						<li><a href="#">Corporate</a></li>
+						<li><a href="#">Portfolio</a></li>
+					</ul>
+			</nav>
+
+		<!-- Portfolio-->
+
+			<div class="flex_container_portfolio">
+				<a href="#" class="flex-item">
+					<img src="images/portfolio/01.jpg" alt="dessin avec lunette et gros nez" />
+					<div class="projet_detail">
+						<h3>L'Opticien</h3>
+						<p>Boutique en Ligne</p>
+						<div class="eyes">
+						</div>
+					</div>
+				</a>
+
+				<a href="#" class="flex-item">
+						<img src="images/portfolio/02.jpg" alt="dessin d'un lapin rose" />
+						<div class="projet-detail">
+							<h3>Le Lapin Rose</h3>
+							<p>Cadeau Surprise</p>
+							<div class="eyes">
+							</div>
+						</div>
+				</a>
+
+				<a href="#" class="flex-item">
+						<img src="images/portfolio/03.jpg" alt="siganture original Pompadour" />
+						<div class="projet-detail">
+							<h3>Original Pompadour</h3>
+							<p>Boutique en ligne</p>
+							<div class="eyes">
+							</div>
+						</div>
+				</a>
+
+				<a href="#" class="flex-item">
+						<img src="images/portfolio/04.jpg" alt="Impression d'un document" />
+						<div class="projet-detail">
+							<h3>Imprimeur</h3>
+							<p>Imprimerie en ligne</p>
+							<div class="eyes">
+							</div>
+						</div>
+				</a>
+
+				<a href="#" class="flex-item">
+						<img src="images/portfolio/05.jpg" alt="deux sacs pour le shopping"/>
+						<div class="projet-detail">
+							<h3>Shop on line</h3>
+							<p>Boutique en ligne</p>
+							<div class="eyes">
+							</div>
+						</div>
+				</a>
+
+				<a href="#" class="flex-item">
+						<img src="images/portfolio/06.jpg" alt="dessin avec momunents du monde"/>
+						<div class="projet-detail">
+							<h3>1001 Tours</h3>
+							<p>Agence de Voyage</p>
+							<div class="eyes">
+							</div>
+						</div>
+				</a>
+
+				<a href="#" class="flex-item">
+						<img src="images/portfolio/07.jpg" alt="dessin de la fusée Arianne"/>
+						<div class="projet-detail">
+							<h3>Arianne</h3>
+							<p>Décollage immédiat</p>
+							<div class="eyes">
+							</div>
+						</div>
+				</a>
+
+				<a href="#" class="flex-item">
+						<img src="images/portfolio/08.jpg" alt="photo de fournitures de bureau"/>
+						<div class="projet-detail">
+							<h3>Fourniture Bureau</h3>
+							<p>Boutique en ligne</p>
+							<div class="eyes">
+							</div>
+						</div>
+				</a>
+			</div>
+		</section>
+
 		<!-- Contact -->
 
+		<section id="contact">
+		        <div id="conteneur_contact">
+		     			
+	     			<form>
+	        			<h2>Nous Contacter</h2>
+	        			<span><p>WebAgency SAS<br />
+	        			25 rue d'Hauteville, 75010 PARIS<br />
+	        			Tél : 01 02 03 04 05</p></span>
+	        	
+	        			<input type="text" name="name" placeholder="Name" required="required"/><br />
+                		<input type="text" name="email" placeholder="E-mail" required="required"/><br />
+                		<input type="text" name="subject"  placeholder="subject"/><br />
+                		<textarea name="message" placeholder="Message"></textarea><br />
+                		<input type="submit" value="Send Message" id="submit"/>
+		        	</form>
+				</div>
 
-		<section class="Contact">
-			<h2>Contact</h2>
+		<!-- Carte Google -->
 
-				<hr/>
 		</section>
-		
-
 
 			<footer>
 			
