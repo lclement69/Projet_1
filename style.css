@@ -1,9 +1,95 @@
+/* Général -------------------------------------------------------------------------------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+body h1 h2 {
+    text-transform: uppercase;
+}
+
+body h2 {
+    font-size: 3em;
+}
+
+body h3 {
+    font-family: 'Roboto', sans-serif;
+
+
 /* PARTIE RESPONSIVE --------------------------------------------------------------------------------------------------------------*/
 
 
 
 /* Menu & Logo ----------------------------------------------------------------------------------------------------------------------*/
-  
+
+.main-nav {
+    font-family: 'Roboto', sans-serif;
+    z-index: 4;
+    width: 100%;
+    position: fixed;
+}
+
+img {
+    width: 100%;
+    height: auto;
+ }
+
+.main-nav input {
+    visibility: hidden;
+}
+
+.main-nav {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+#logo {
+    display: block;
+    padding: 0;
+    float: left;
+    padding-top: 10px;
+}
+
+.main-nav {
+    margin: 0;
+}
+
+.menu {
+    display: none;
+}
+
+.main-nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.main-nav ul li {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    float: left;
+}
+
+.main-nav a {
+    display: block;
+    padding: 0 60px;
+    font-size: 20px;
+    line-height: 60px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
 
 /* SERVICES ----------------------------------------------------------------------------------------------------------------------*/
 
