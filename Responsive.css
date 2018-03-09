@@ -48,7 +48,6 @@
     #logo{
         margin: 0; 
         padding: 40px;  
-        background-color: tomato;
     }
 
     .menu{
@@ -61,7 +60,6 @@
         margin: 0; 
         list-style: none;
         justify-content: space-around;
-        background-color: tomato;
     }
 
 }

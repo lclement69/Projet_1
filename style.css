@@ -20,7 +20,7 @@ body h2 {
 
 body h3 {
     font-family: 'Roboto', sans-serif;
-
+}
 
 /* PARTIE RESPONSIVE --------------------------------------------------------------------------------------------------------------*/
 
@@ -44,21 +44,11 @@ img {
     visibility: hidden;
 }
 
-.main-nav {
-    margin: 0;
-    padding: 0;
-    background-color: #fff;
-}
-
 #logo {
     display: block;
     padding: 0;
     float: left;
     padding-top: 10px;
-}
-
-.main-nav {
-    margin: 0;
 }
 
 .menu {
@@ -91,9 +81,45 @@ img {
     font-weight: bold;
 }
 
+/* Slider -------------------------------------------------------------------------------------------------------------------------*/
+
+#slideshow .container-slide {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    width: 200%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+
+.ombre1 {
+    display: none;
+}
+
+.ombre {
+    display: none;
+}
+
+
 /* SERVICES ----------------------------------------------------------------------------------------------------------------------*/
 
-  
+
+
 
 /* PROJET ------------------------------------------------------------------------------------------------------------------------*/
 
