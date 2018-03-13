@@ -1,5 +1,5 @@
 /* Général -------------------------------------------------------------------------------------------------------------------------*/
-
+html,
 body {
     margin: 0;
     padding: 0;
@@ -22,17 +22,33 @@ body h3 {
     font-family: 'Roboto', sans-serif;
 }
 
+nav {
+    font-family: 'Roboto', sans-serif;
+    z-index: 4;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a,
+p,
+label {
+    color: #555;
+}
+
+
 /* PARTIE RESPONSIVE --------------------------------------------------------------------------------------------------------------*/
 
 
 
 /* Menu & Logo ----------------------------------------------------------------------------------------------------------------------*/
 
-.main-nav {
+.menu {
     font-family: 'Roboto', sans-serif;
     z-index: 4;
-    width: 100%;
-    position: fixed;
 }
 
 img {
@@ -40,7 +56,7 @@ img {
     height: auto;
  }
 
-.main-nav input {
+.menu input {
     visibility: hidden;
 }
 
@@ -55,7 +71,7 @@ img {
     display: none;
 }
 
-.main-nav ul {
+.menu ul {
     float: right;
     padding: 0;
     margin: 0;
@@ -63,7 +79,7 @@ img {
     position: relative;
 }
 
-.main-nav ul li {
+.menu ul li {
     display: block;
     width: 100%;
     background-color: #fff;
@@ -71,7 +87,7 @@ img {
     float: left;
 }
 
-.main-nav a {
+.menu a {
     display: block;
     padding: 0 60px;
     font-size: 20px;
@@ -83,7 +99,8 @@ img {
 
 /* Slider -------------------------------------------------------------------------------------------------------------------------*/
 
-#slideshow .container-slide {
+#slideshow,
+.container-slide {
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -107,19 +124,165 @@ figure {
     position: relative;
 }
 
-.ombre1 {
-    display: none;
-}
-
+.ombre1,
 .ombre {
     display: none;
 }
 
+/*Bouton------------------------------------------------------------------------------------------------------------------------*/
+
+.button {
+    width: 100px;
+    margin-bottom: -20px;
+}
+
+.bouton1 {
+    padding: 10px 0 10px 0;
+    font: bold 16px Arial;
+    font-weight: bold;
+    background: #5CABD1;
+    color: #fff;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border: none;
+    text-align: center;
+}
+
+/*Paragraphe d'introduction-----------------------------------------------------------------------------------------------------*/
+
+.intro {
+    display: flex;
+    justify-content: center;
+}
+
+.intro p {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 50px;
+}
+
+.texte-intro {
+    display: flex;
+    flex-direction: row;
+}
+
+.blue {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E8F1FF;
+    width: 100%;
+}
+
+.blue0 {
+    display: none;
+}
+
+/* Icone avec point bleu----------------------------------------------------------------------------------------------------------*/
+
+.ux {
+    width: 50px;
+    margin-top: 40px;
+    padding-right: 40px;
+}
+
+.cercle {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.point-Bleu {
+    font-size: 150px;
+    color: #5CABD1;
+    position: relative;
+    left: 43px;
+    bottom: 140px;
+}
+
+.camembert {
+    color: #5CABD1;
+    position: relative;
+    left: 16px;
+    top: 14px;
+}
 
 /* SERVICES ----------------------------------------------------------------------------------------------------------------------*/
 
+#conteneur-logo-texte {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.uxdesign {
+    color: #5CABD1;
+    position: relative;
+    top: 13px;
+    margin-left: 10px;
+}
 
+.logo-et-texte1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texte1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.services {
+    margin-bottom: 50px;
+}
+
+.services h2 {
+    font-size: 2em;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.services h3 {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.services ul {
+    list-style-type: none;
+    margin-top: 50px;
+    padding-left: 0px;
+}
+
+.services li {
+    position: relative;
+    padding-left: 0px;
+}
+
+.services img {
+    margin-top: 50px;
+}
+
+.center {
+    text-align: center;
+    padding: 0 10px;
+    margin: auto;
+}
+
+#conteneur-services {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.element-Services {
+    margin: auto;
+    padding: 0 10px;
+}
 
 /* PROJET ------------------------------------------------------------------------------------------------------------------------*/
 
