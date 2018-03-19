@@ -39,7 +39,6 @@ label {
     color: #555;
 }
 
-
 /* PARTIE RESPONSIVE --------------------------------------------------------------------------------------------------------------*/
 
 
@@ -98,6 +97,11 @@ img {
 }
 
 /* Slider -------------------------------------------------------------------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    padding-top: 100px;
+}
 
 #slideshow,
 .container-slide {
@@ -285,22 +289,187 @@ figure {
 }
 
 /* PROJET ------------------------------------------------------------------------------------------------------------------------*/
+.projets {
+    background: #f5f5f5;
+}
 
-  
+.projets h2 {
+    font-size: 2em;
+    padding-top: 30px;
+}
 
-/* MENU PROJET ----------------------------------------------------------------------------------------------------------------*/
+#conteneurMenu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
 
-  
 
-/* PORFOLIO -----------------------------------------------------------------------------------------------------------------*/
+/* Triangle -----------------------------------------------------------------------------------------------------------------------*/
 
-  
-  
+.triangle {
+    position: absolute;
+    margin-left: -42px;
+    margin-top: 18px;
+    color: #468CAD;
+    visibility: hidden;
+}
+
+.projets input:checked + label .triangle { /* Forum site besoin d'explication */
+    visibility: visible;
+}
+
+
+/*Projet coché ---> apparition triangle-------------------------------------------------------------------------------------------*/
+
+.icone {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Portfolio ---------------------------------------------------------------------------------------------------------------------*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.pictureRow {} /* Je ne sais pas quoi mettre ici lol car il semble que cela marche sans le remplir ! */
+
+.picture {
+    min-width: 250px;
+    width: 23%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.picture img {
+    width: 100%;
+    margin: 10px;
+}
+
+.legende {
+    text-align: left;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5); /* site Alsacréation */
+    color: #fff;
+    padding: 10px 10px;
+    opacity: 0;
+    bottom: -30%;
+    left: 0;
+    margin: 10px;
+    width: 100%;
+}
+
+.picture 
+.legende {
+    opacity: 1;
+    bottom: 4px;
+}
+
+.iconeOeil {
+    position: absolute;
+    background-color: #4DA1B1;
+    color: #fff;
+    left: 70%;
+    top: -28%;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+
+/*target ---------------------------------------------------------------------------------------------------------------------------*/
+
+.projets input {
+    display: none;
+}
+
+.projets ul {
+    padding: 0;
+}
+
+.projets label {
+    background: #C0C0C0;
+    color: grey;
+    padding: 8px;
+    margin: 0;
+    border-bottom: 3px solid #C0C0C0;
+    text-align: center;
+    display: inline-block;
+}
+
+.projets label:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+.projets input:checked + label {
+    background: #5CABD1;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid #468CAD;
+}
       
 /* CONTACT ------------------------------------------------------------------------------------------------------------------*/
 
+.contact img {
+    display:none;
+}
+.contact {
+    margin-top: 20px;
+}
 
+.contact p {
+    color: black;
+    font-weight: bold;
+}
 
+input[type=text], /* cours sur les formulaires */
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #fff;
+    color: #5CABD1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #fff;
+}
+
+.container {
+    width: 100%;
+    border-radius: 5px;
+    background: #5CABD1;
+    opacity: 0.7;
+    padding: 10px 20px 10px 20px;
+    margin: 5% 5% 5% 5%;
+}
+
+#conteneur4 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
 
  /* CARTE GOOGLE -------------------------------------------------------------------------------------------------------------*/
 
