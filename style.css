@@ -26,6 +26,7 @@ nav {
     font-family: 'Roboto', sans-serif;
     z-index: 4;
     width: 100%;
+    position: fixed;
 }
 
 img {
@@ -39,38 +40,85 @@ label {
     color: #555;
 }
 
-/* PARTIE RESPONSIVE --------------------------------------------------------------------------------------------------------------*/
+.trait {
+    margin-bottom: 50px;
+}
 
+.trait p{
+    color: #5CABD1;
+}
 
+.trait p:before {
+    display: inline-block;
+    vertical-align: middle;
+    width: 4rem;
+    height: 1px;
+    background: #000;
+}
+
+.trait p:after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 4rem;
+    height: 1px;
+    background: #000;
+}
+
+.trait p:before {
+    margin-right: .3rem;
+}
+
+.trait p:after {
+    margin-left: .3rem;
+}
 
 /* Menu & Logo ----------------------------------------------------------------------------------------------------------------------*/
 
-.menu {
-    font-family: 'Roboto', sans-serif;
-    z-index: 4;
-}
-
-img {
-    width: 100%;
-    height: auto;
- }
-
-.menu input {
+nav input {
     visibility: hidden;
 }
 
-#logo {
+nav {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+#logo{
     display: block;
     padding: 0;
     float: left;
     padding-top: 10px;
 }
 
-.menu {
+nav {
+    margin: 0;
+}
+
+.menu{
     display: none;
 }
 
-.menu ul {
+.toggle {
+    display: block;
+    background-color: #fff;
+    padding: 0 20px;
+    color: #5CABD1;
+    font-size: 30px;
+    font-weight: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    border: none;
+    text-align: right;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+[id^=drop]:checked + ul {
+    display: block;
+}
+
+nav ul{
     float: right;
     padding: 0;
     margin: 0;
@@ -78,7 +126,7 @@ img {
     position: relative;
 }
 
-.menu ul li {
+nav ul li {
     display: block;
     width: 100%;
     background-color: #fff;
@@ -86,7 +134,7 @@ img {
     float: left;
 }
 
-.menu a {
+nav a {
     display: block;
     padding: 0 60px;
     font-size: 20px;
@@ -94,6 +142,10 @@ img {
     text-decoration: none;
     text-align: center;
     font-weight: bold;
+}
+
+li > a:only-child:after {
+    content: '';
 }
 
 /* Slider -------------------------------------------------------------------------------------------------------------------------*/
@@ -276,14 +328,14 @@ figure {
     margin: auto;
 }
 
-#conteneur-services {
+#conteneurservices {
     display: flex;
     flex-direction: column;
     margin: auto;
     padding: 0 10px;
 }
 
-.element-Services {
+.elementservices {
     margin: auto;
     padding: 0 10px;
 }
@@ -413,8 +465,23 @@ figure {
     color: #fff;
     text-decoration: none;
     border-bottom: 3px solid #468CAD;
+}   
+
+#tab_allworks:checked ~ #content1,
+#content2,
+#content3,
+#content4 #content5 #content6,
+#content7,
+#content8,
+#tab_creative:checked ~ #content2,
+#content3,
+#content4,
+#tab_corporate:checked ~ #content5,
+#content6,
+#tab_portfolio:checked ~ #content7,
+#content8 {
+    display: block;
 }
-      
 /* CONTACT ------------------------------------------------------------------------------------------------------------------*/
 
 .contact img {

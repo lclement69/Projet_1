@@ -1,65 +1,270 @@
+/* NAVIGATION ************************************************************************************/
 
-/*---------------------------------------------------- Support Téléphone ---------------------------------------------------------*/
-
-/*-----------------------------------------------------Support Tablette---------------------------------------------------------*/
-
-@media only screen and (min-width: 768px)
-
-{
-    .menu{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 200px;
-    }
-
-    #logo{
-        margin-top: 10px;
-       
-    }
-
-    .menu{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        height: 150px;
-    }
-
-    li{
-        list-style: none;
-        margin: 5px;
-    }
+@media all and (min-width: 968px) { 
     
+    nav {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        z-index: 4;
+        width: 100%;
+        position: fixed;
+    }
+
+    #logo {
+        display: block;
+        padding: 0;
+        float: left;
+        padding: 10px 10px 20px 100px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu a:hover {
+        border-top: 1px solid #6699cc;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        float: none;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 30px 0 30px;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+    /*slider*/
+    .slider {
+        position: relative;
+    }
+
+    /*texte d'introduction***********************************************************************/
+    .blue {
+        display: none;
+    }
+
+    .blue0 {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 80px;
+        max-width: 100%;
+    }
+
+    .blue0 p {
+        color: #fff;
+        padding-left: 20px;
+        width: 100%;
+    }
+    .blue0 h1 {
+        color: #fff;
+        margin-left: 20px;
+        width: 100%;
+    }
+    /*bouton*/
+    .button {
+        width: 100%;
+        margin: 20px;
+    }
+    .bouton1 {
+        width: 25%;
+        height: 50px;
+    }
 }
 
-
-/* ------------------------------------------------------Support Ordinateur------------------------------------------------------ */ 
-@media screen and (min-width: 1024px)
-
-{
-   .menu{
+@media all and (min-width: 768px) {
+    /*slide*/
+    .slider {
+        position: relative;
+    }
+    #image-slide {
+        /*CSS3 keyframes animation*/
+        animation-name: slide;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: steps(1, end);
+    }
+   
+    .ombre {
+        z-index: 2;
+        background: rgba(0, 0, 0, .4);
+        color: #fff;
+        text-decoration: none;
+        height: 60px;
+        width: 20px;
+        border-top-right-radius: 35px;
+        border-bottom-right-radius: 35px;
+        position: absolute;
+        top: 42%;
         display: flex;
-        flex-direction: inline-flex;
-        width: 100%;
-        height: 120px;
-        margin-top: 0;
+        left: 0%;
+        align-items: center;
+        cursor: pointer;
     }
-
-    #logo{
-        margin: 0; 
-        padding: 40px;  
+    .ombre1 {
+        z-index: 2;
+        background: rgba(0, 0, 0, .4);
+        color: #fff;
+        text-decoration: none;
+        height: 60px;
+        width: 20px;
+        border-top-left-radius: 35px;
+        border-bottom-left-radius: 35px;
+        position: absolute;
+        top: 42%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 0%;
+        cursor: pointer;
     }
-
-    .menu{
+    /*portfolio*/
+    .picture:hover .legende {
+        opacity: 1;
+        bottom: 4px;
+        visibility: visible;
+    }
+    .picture .legende {
+        visibility: hidden;
+    }
+    .picture:hover .legende {
+        opacity: 1;
+        bottom: 4px;
+    }
+    /*services*/
+    .center {
+        margin: auto;
+        max-width: 50%;
+    }
+    #conteneurServices {
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-
-    li {
-        align-items: flex-end;
-        margin: 0; 
-        list-style: none;
-        justify-content: space-around;
+    .logo-et-texte1 {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
     }
+    .services h3 {
+        text-align: left;
+        margin-bottom: 0;
+    }
+    /*sigles*/
+    .ux {
+        width: 50px;
+        width: 50px;
+        margin-top: -50px;
+        padding-right: 40px;
+    }
+    /*contact*/
+    .contact {
+        margin-top: 0;
+        width: 100%;
+    }
+    .contact img {
+        display:block;
+        position: absolute;
+        margin-top: 0;
+        width: 100%;
+        height: 650px;
+    }
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical
+    }
+    input[type=submit] {
+        background-color: #6699cc;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #6699cc;
+    }
+    #conteneur4 {
+        display: flex;
+        justify-content: flex-end;
+        z-index: 2;
+    }
+    .container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 20%;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 10px 20px 10px 20px;
+    }
+    .filtre-bleu {
+        position: absolute;
+        width: 100% !important;
+        height: 650px !important;
+        background-color: #3491B2;
+        opacity: 0.3;
+    }
+}
 
+@media all and (max-width: 370px) {
+    #conteneurMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    .projets input:checked + label .triangle {
+        visibility: hidden;
+    }
+    .projets label {
+        background: #C0C0C0;
+        color: grey;
+        padding: 8px;
+        margin: 0px 0px 0 0px;
+        border-bottom: none;
+        text-align: center;
+        display: block;
+    }
+    .projets label:hover {
+        color: #888;
+        cursor: pointer;
+    }
+    .projets input:checked + label {
+        background: #5CABD1;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: none;
+    }
 }
