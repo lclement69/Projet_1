@@ -40,36 +40,34 @@ label {
     color: #555;
 }
 
+/* trait séparateur ******************************************************************************************************************/
+
 .trait {
     margin-bottom: 50px;
 }
 
-.trait p{
+.trait p {
     color: #5CABD1;
 }
 
 .trait p:before {
+    content: "";
     display: inline-block;
-    vertical-align: middle;
-    width: 4rem;
-    height: 1px;
-    background: #000;
-}
-
-.trait p:after {
-    display: inline-block;
-    vertical-align: middle;
-    width: 4rem;
-    height: 1px;
-    background: #000;
-}
-
-.trait p:before {
     margin-right: .3rem;
+    vertical-align: middle;
+    width: 4rem;
+    height: 1px;
+    background: #000;
 }
 
 .trait p:after {
+    content: "";
+    display: inline-block;
     margin-left: .3rem;
+    vertical-align: middle;
+    width: 4rem;
+    height: 1px;
+    background: #000;
 }
 
 /* Menu & Logo ----------------------------------------------------------------------------------------------------------------------*/
@@ -105,7 +103,7 @@ nav {
     padding: 0 20px;
     color: #5CABD1;
     font-size: 30px;
-    font-weight: 60px;
+    font-weight: bold;
     line-height: 60px;
     text-decoration: none;
     border: none;
@@ -155,7 +153,7 @@ header {
     padding-top: 100px;
 }
 
-#slideshow,
+.slideshow,
 .container-slide {
     overflow: hidden;
     padding: 0;
@@ -251,7 +249,7 @@ figure {
     border-radius: 50%;
 }
 
-.point-Bleu {
+.point-bleu {
     font-size: 150px;
     color: #5CABD1;
     position: relative;
@@ -262,13 +260,13 @@ figure {
 .camembert {
     color: #5CABD1;
     position: relative;
-    left: 16px;
+    left: 14px;
     top: 14px;
 }
 
 /* SERVICES ----------------------------------------------------------------------------------------------------------------------*/
 
-#conteneur-logo-texte {
+.conteneur-logo-texte {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -278,7 +276,7 @@ figure {
     color: #5CABD1;
     position: relative;
     top: 13px;
-    margin-left: 10px;
+    margin-left: 14px;
 }
 
 .logo-et-texte1 {
@@ -328,7 +326,7 @@ figure {
     margin: auto;
 }
 
-#conteneurservices {
+.conteneurservices {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -350,7 +348,7 @@ figure {
     padding-top: 30px;
 }
 
-#conteneurMenu {
+.conteneurmenu {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
@@ -389,7 +387,7 @@ figure {
     justify-content: center;
 }
 
-.pictureRow {} /* Je ne sais pas quoi mettre ici lol car il semble que cela marche sans le remplir ! */
+.picturerow {} /* Je ne sais pas quoi mettre ici lol car il semble que cela marche sans le remplir ! */
 
 .picture {
     min-width: 250px;
@@ -467,18 +465,18 @@ figure {
     border-bottom: 3px solid #468CAD;
 }   
 
-#tab_allworks:checked ~ #content1,
+#tab-allworks:checked ~ #content1,
 #content2,
 #content3,
 #content4 #content5 #content6,
 #content7,
 #content8,
-#tab_creative:checked ~ #content2,
+#tab-creative:checked ~ #content2,
 #content3,
 #content4,
-#tab_corporate:checked ~ #content5,
+#tab-corporate:checked ~ #content5,
 #content6,
-#tab_portfolio:checked ~ #content7,
+#tab-portfolio:checked ~ #content7,
 #content8 {
     display: block;
 }
@@ -531,13 +529,15 @@ input[type=submit]:hover {
     margin: 5% 5% 5% 5%;
 }
 
-#conteneur4 {
+.conteneur4 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    border-radius: 4px;
 }
 
  /* CARTE GOOGLE -------------------------------------------------------------------------------------------------------------*/
 
+#map{
+    height: 600px;
+}
 

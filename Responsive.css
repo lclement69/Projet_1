@@ -162,7 +162,7 @@
         margin: auto;
         max-width: 50%;
     }
-    #conteneurServices {
+    .conteneurservices {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -218,7 +218,7 @@
     input[type=submit]:hover {
         background-color: #6699cc;
     }
-    #conteneur4 {
+    .conteneur4 {
         display: flex;
         justify-content: flex-end;
         z-index: 2;
@@ -241,7 +241,7 @@
 }
 
 @media all and (max-width: 370px) {
-    #conteneurMenu {
+    .conteneurmenu {
         display: flex;
         flex-direction: column;
     }
