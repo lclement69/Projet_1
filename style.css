@@ -31,7 +31,6 @@ nav {
 
 img {
     width: 100%;
-    height: auto;
 }
 
 a,
@@ -53,23 +52,26 @@ label {
 .trait p:before {
     content: "";
     display: inline-block;
-    margin-right: .3rem;
     vertical-align: middle;
     width: 4rem;
     height: 1px;
-    background: #000;
+    background: #c0c0c0;
 }
 
 .trait p:after {
     content: "";
     display: inline-block;
-    margin-left: .3rem;
     vertical-align: middle;
     width: 4rem;
     height: 1px;
-    background: #000;
+    background: #c0c0c0;
 }
 
+.fa.fa-circle.fa-lg {
+    padding: 8px 5px;
+    border-radius: 50%;
+    background-color: #fff;
+}
 /* Menu & Logo ----------------------------------------------------------------------------------------------------------------------*/
 
 nav input {
@@ -93,12 +95,18 @@ nav {
     margin: 0;
 }
 
+.fa-bars{
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
 .menu{
     display: none;
 }
 
 .toggle {
-    display: block;
+    display: block !important;
     background-color: #fff;
     padding: 0 20px;
     color: #5CABD1;
@@ -113,7 +121,7 @@ nav {
 }
 
 [id^=drop]:checked + ul {
-    display: block;
+    display: block;file:///Users/lionelclement/Desktop/webagency/index.html#services
 }
 
 nav ul{
@@ -121,7 +129,7 @@ nav ul{
     padding: 0;
     margin: 0;
     list-style: none;
-    position: relative;
+    /*position: relative;*/
 }
 
 nav ul li {
@@ -159,7 +167,6 @@ header {
     padding: 0;
     margin: 0;
     width: 100%;
-    position: relative;
 }
 
 .slider {
@@ -168,14 +175,12 @@ header {
     width: 200%;
     padding: 0;
     margin: 0;
-    position: relative;
 }
 
 figure {
     padding: 0;
     margin: 0;
     width: 100%;
-    position: relative;
 }
 
 .ombre1,
@@ -252,14 +257,14 @@ figure {
 .point-bleu {
     font-size: 150px;
     color: #5CABD1;
-    position: relative;
+    position: relative; /*si je retire je péte tout*/
     left: 43px;
     bottom: 140px;
 }
 
 .camembert {
     color: #5CABD1;
-    position: relative;
+    position: relative; /*si je retire je péte tout*/
     left: 14px;
     top: 14px;
 }
@@ -274,7 +279,7 @@ figure {
 
 .uxdesign {
     color: #5CABD1;
-    position: relative;
+    position: relative; /*si je retire je péte tout*/
     top: 13px;
     margin-left: 14px;
 }
@@ -339,6 +344,7 @@ figure {
 }
 
 /* PROJET ------------------------------------------------------------------------------------------------------------------------*/
+
 .projets {
     background: #f5f5f5;
 }
@@ -350,6 +356,7 @@ figure {
 
 .conteneurmenu {
     display: flex;
+    border-radius: 5px;
     justify-content: center;
     margin-bottom: 30px;
 }
@@ -365,12 +372,13 @@ figure {
     visibility: hidden;
 }
 
-.projets input:checked + label .triangle { /* Forum site besoin d'explication */
+.projets input:checked + label .triangle { 
     visibility: visible;
 }
 
 
 /*Projet coché ---> apparition triangle-------------------------------------------------------------------------------------------*/
+
 
 .icone {
     display: flex;
@@ -380,14 +388,13 @@ figure {
 
 /* Portfolio ---------------------------------------------------------------------------------------------------------------------*/
 
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
 }
-
-.picturerow {} /* Je ne sais pas quoi mettre ici lol car il semble que cela marche sans le remplir ! */
 
 .picture {
     min-width: 250px;
@@ -405,7 +412,7 @@ figure {
 .legende {
     text-align: left;
     position: absolute;
-    background: rgba(0, 0, 0, 0.5); /* site Alsacréation */
+    background: rgba(0, 0, 0, 0.5); 
     color: #fff;
     padding: 10px 10px;
     opacity: 0;
@@ -431,7 +438,6 @@ figure {
     border: 2px solid #fff;
     border-radius: 50%;
 }
-
 
 /*target ---------------------------------------------------------------------------------------------------------------------------*/
 
@@ -480,7 +486,16 @@ figure {
 #content8 {
     display: block;
 }
-/* CONTACT ------------------------------------------------------------------------------------------------------------------*/
+
+/* Carte + CONTACT ------------------------------------------------------------------------------------------------------------------*/
+
+
+#map {
+    display: flex;
+    position: absolute;
+    height: 650px;
+    width: 100%;
+}
 
 .contact img {
     display:none;
@@ -494,7 +509,7 @@ figure {
     font-weight: bold;
 }
 
-input[type=text], /* cours sur les formulaires */
+input[type=text], 
 select,
 textarea {
     width: 100%;
@@ -535,9 +550,32 @@ input[type=submit]:hover {
     margin-bottom: 20px;
 }
 
- /* CARTE GOOGLE -------------------------------------------------------------------------------------------------------------*/
+/* Réseau sociaux-------------------------------------------------------------------------------------------------------------*/
 
-#map{
-    height: 600px;
+footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+    background-color: lightgray;
 }
+footer p{
+    font-size: 0.8em;
+}
+.copyright{
+    color: rgb(50, 150, 180);
+    font-weight: bold;
+    font-size: 1em;
+    padding-top: 40px;
+}
+.reseaux-sociaux {
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.fa-facebook-f, .fa-twitter, .fa-google, .fa-rss{
+    padding: 0 10px 0 10px;
+}
+
 

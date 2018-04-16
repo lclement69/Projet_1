@@ -1,110 +1,14 @@
 /* NAVIGATION ************************************************************************************/
 
-@media all and (min-width: 968px) { 
-    
-    nav {
-        margin: 0;
-        padding: 0;
-        background-color: #fff;
-        z-index: 4;
-        width: 100%;
-        position: fixed;
-    }
-
-    #logo {
-        display: block;
-        padding: 0;
-        float: left;
-        padding: 10px 10px 20px 100px;
-    }
-
-    .menu {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .menu a:hover {
-        border-top: 1px solid #6699cc;
-    }
-
-    .toggle {
-        display: none;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    nav ul li {
-        display: block;
-        width: 100%;
-        background-color: #fff;
-        text-align: center;
-        float: none;
-    }
-
-    nav a {
-        display: block;
-        padding: 10px 30px 0 30px;
-        font-size: 20px;
-        line-height: 60px;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
-    }
-    /*slider*/
-    .slider {
-        position: relative;
-    }
-
-    /*texte d'introduction***********************************************************************/
-    .blue {
-        display: none;
-    }
-
-    .blue0 {
-        position: absolute;
-        top: 40%;
-        left: 15%;
-        transform: translate(-50%, -50%);
-        font-size: 18px;
-        color: #fff;
-        text-transform: uppercase;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 80px;
-        max-width: 100%;
-    }
-
-    .blue0 p {
-        color: #fff;
-        padding-left: 20px;
-        width: 100%;
-    }
-    .blue0 h1 {
-        color: #fff;
-        margin-left: 20px;
-        width: 100%;
-    }
-    /*bouton*/
-    .button {
-        width: 100%;
-        margin: 20px;
-    }
-    .bouton1 {
-        width: 25%;
-        height: 50px;
-    }
-}
-
 @media all and (min-width: 768px) {
+
     /*slide*/
+
     .slider {
         position: relative;
     }
+   
     #image-slide {
-        /*CSS3 keyframes animation*/
         animation-name: slide;
         animation-duration: 10s;
         animation-iteration-count: infinite;
@@ -232,15 +136,109 @@
         padding: 10px 20px 10px 20px;
     }
     .filtre-bleu {
+        display: flex;
         position: absolute;
         width: 100% !important;
         height: 650px !important;
         background-color: #3491B2;
         opacity: 0.3;
     }
-}
 
-@media all and (max-width: 370px) {
+@media all and (min-width: 968px) { 
+    
+    nav {
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        z-index: 4;
+        width: 100%;
+        position: fixed;
+    }
+
+    #logo {
+        display: block;
+        padding: 0;
+        float: left;
+        padding: 10px 10px 20px 100px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu a:hover {
+        border-top: 1px solid #6699cc;
+    }
+
+    .toggle {
+        display: none !important;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        background-color: #fff;
+        text-align: center;
+        float: none;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 30px 0 30px;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        text-align: center;
+        font-weight: bold;
+    }
+    /*slider*/
+    .slider {
+        position: relative;
+    }
+
+    /*texte d'introduction***********************************************************************/
+    .blue {
+        display: none;
+    }
+
+    .blue0 {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 80px;
+        max-width: 100%;
+    }
+
+    .blue0 p, 
+    .blue0 h1 {
+        color: #fff;
+        padding-left: 20px;
+        width: 100%;
+    }
+    .blue0 h1 {
+        text-transform: uppercase;
+    }
+    /*bouton*/
+    .button {
+        width: 100%;
+        margin: 20px;
+    }
+    .bouton1 {
+        width: 25%;
+        height: 50px;
+    }
+
+/*@media all and (max-width: 370px) {
     .conteneurmenu {
         display: flex;
         flex-direction: column;
@@ -266,5 +264,4 @@
         color: #fff;
         text-decoration: none;
         border-bottom: none;
-    }
-}
+    }*/
