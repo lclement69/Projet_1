@@ -10,7 +10,7 @@
    
     #image-slide {
         animation-name: slide;
-        animation-duration: 10s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
         animation-timing-function: steps(1, end);
     }
@@ -66,12 +66,12 @@
         margin: auto;
         max-width: 50%;
     }
-    .conteneurservices {
+    .conteneur-services {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
-    .logo-et-texte1 {
+    .logo-texte-services {
         display: flex;
         flex-direction: row;
         max-width: 800px;
@@ -122,12 +122,12 @@
     input[type=submit]:hover {
         background-color: #6699cc;
     }
-    .conteneur4 {
+    .conteneur-carte-formulaire{
         display: flex;
         justify-content: flex-end;
         z-index: 2;
     }
-    .container {
+    .container-formulaire {
         margin-top: 20px;
         margin-bottom: 20px;
         width: 20%;
@@ -171,7 +171,7 @@
         border-top: 1px solid #6699cc;
     }
 
-    .toggle {
+    .menu-burger {
         display: none !important;
     }
 
@@ -206,7 +206,7 @@
         display: none;
     }
 
-    .blue0 {
+    .container-text-slider {
         position: absolute;
         top: 40%;
         left: 15%;
@@ -219,49 +219,21 @@
         max-width: 100%;
     }
 
-    .blue0 p, 
-    .blue0 h1 {
+    .container-text-slider p, 
+    .container-text-slider h1 {
         color: #fff;
         padding-left: 20px;
         width: 100%;
     }
-    .blue0 h1 {
+    .container-text-slider h1 {
         text-transform: uppercase;
     }
     /*bouton*/
-    .button {
+    .blue-button {
         width: 100%;
         margin: 20px;
     }
-    .bouton1 {
+    .button-writting {
         width: 25%;
         height: 50px;
     }
-
-/*@media all and (max-width: 370px) {
-    .conteneurmenu {
-        display: flex;
-        flex-direction: column;
-    }
-    .projets input:checked + label .triangle {
-        visibility: hidden;
-    }
-    .projets label {
-        background: #C0C0C0;
-        color: grey;
-        padding: 8px;
-        margin: 0px 0px 0 0px;
-        border-bottom: none;
-        text-align: center;
-        display: block;
-    }
-    .projets label:hover {
-        color: #888;
-        cursor: pointer;
-    }
-    .projets input:checked + label {
-        background: #5CABD1;
-        color: #fff;
-        text-decoration: none;
-        border-bottom: none;
-    }*/

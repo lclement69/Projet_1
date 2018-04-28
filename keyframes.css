@@ -2,10 +2,10 @@
 	0%{
 		transform: translateX(0px);
 	}
-	20%{
+	50%{
 		transform: translateX(0px);
 	}
-	70%{
+	50%{
 		transform: translateX(-100%);
 	}
 	100%{
