@@ -143,6 +143,7 @@
         background-color: #3491B2;
         opacity: 0.3;
     }
+}
 
 @media all and (min-width: 968px) { 
     
@@ -237,3 +238,4 @@
         width: 25%;
         height: 50px;
     }
+}

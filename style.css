@@ -3,10 +3,10 @@
 
 {
   font-family: "fontawesome_regular", arial, sans-serif;
- src: url("/fonts/fontawesome-regular-webfont.woff") format("woff"),
-      url("/fonts/fontawesome-regular-webfont.ttf") format("truetype"),
-      url("/fonts/fontawesome-regular-webfont.eot") format("eot"),
-      url("/fonts/fontawesome-regular-webfont.svg") format("svg");
+ src: url("/fonts/fontawesome-webfont.woff") format("woff"),
+      url("/fonts/fontawesome-webfont.ttf") format("truetype"),
+      url("/fonts/fontawesome-webfont.eot") format("eot"),
+      url("/fonts/fontawesome-webfont.svg") format("svg");
 
     font-family: "glyphicons_halflings_regular", arial, sans-serif;
  src: url("/fonts/glyphicons-halflings-regular.woff") format("woff"),
@@ -140,7 +140,7 @@ nav {
 }
 
 [id^=drop]:checked + ul {
-    display: block;file:///Users/lionelclement/Desktop/webagency/index.html#services
+    display: block; 
 }
 
 nav ul{
@@ -308,7 +308,7 @@ figure {
     align-items: center;
 }
 
-.3textes-services{
+.textes-services{
     display: flex;
     flex-direction: column;
 }
