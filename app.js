@@ -14,7 +14,17 @@ function initMap() {
   });
 }
 
-var ulMenu = document.querySelector('[id^=drop]:checked + ul'); 
-ulMenu.addEventListener('click', function() { 
-	ulMenu.style.display = 'none';
+var ulMenu = document.querySelector('#menu');
+var burger = document.querySelector('#burger');
+
+ulMenu.addEventListener('click', function() {
+  if (window.outerWidth < 967) {
+    ulMenu.style.display = 'none';
+  }
+});
+
+burger.addEventListener('click', function() {
+  if (window.outerWidth < 967) {
+    ulMenu.style.display = 'block';
+  }
 });

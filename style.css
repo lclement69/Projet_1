@@ -215,9 +215,13 @@ figure {
     width: 100%;
 }
 
-.ombre1,
-.ombre {
+.slider .ombre,
+.slider .ombre1 {
     display: none;
+}
+
+.color-webagency{
+    color: #5CABD1;
 }
 
 /*Bouton------------------------------------------------------------------------------------------------------------------------*/
@@ -630,8 +634,8 @@ footer p{
         animation-iteration-count: infinite;
         animation-timing-function: steps(1, end);
     }
-   
-    .ombre {
+
+    .slider .ombre {
         z-index: 2;
         background: rgba(0, 0, 0, .4);
         color: #fff;
@@ -647,7 +651,7 @@ footer p{
         align-items: center;
         cursor: pointer;
     }
-    .ombre1 {
+    .slider .ombre1 {
         z-index: 2;
         background: rgba(0, 0, 0, .4);
         color: #fff;
@@ -664,6 +668,7 @@ footer p{
         right: 0%;
         cursor: pointer;
     }
+
     /*portfolio*/
     .picture:hover .legende {
         opacity: 1;
