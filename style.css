@@ -294,8 +294,8 @@ figure {
     font-size: 150px;
     color: #5CABD1;
     position: relative; /*si je retire je péte tout*/
-    left: 43px;
-    bottom: 140px;
+    left: 41px;
+    bottom: 135px;
 }
 
 .camembert {
@@ -598,6 +598,7 @@ footer{
     align-items: center;
     flex-direction: column;
     padding-bottom: 20px;
+    padding-top: 60px;
     background-color: lightgray;
 }
 footer p{
@@ -749,9 +750,9 @@ footer p{
         z-index: 2;
     }
     .container-formulaire {
-        margin-top: 20px;
+        margin-top: 70px;
         margin-bottom: 20px;
-        width: 20%;
+        width: 30%;
         border-radius: 5px;
         background: rgba(255, 255, 255, 0.9);
         padding: 10px 20px 10px 20px;
