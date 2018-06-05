@@ -288,14 +288,17 @@ figure {
     height: 60px;
     border: 1px solid #ccc;
     border-radius: 50%;
+    position: relative;
 }
 
 .point-bleu-cercle {
-    font-size: 150px;
-    color: #5CABD1;
-    position: relative; /*si je retire je péte tout*/
-    left: 41px;
-    bottom: 135px;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: #5CABD1;
+    right:-8px;
+    top:20px;
+    border-radius: 50%
 }
 
 .camembert {
